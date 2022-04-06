@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Validating BuyNowPrice value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: 2000.0]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: 2000.0]]>
+    </line>
+    <line>
+      <![CDATA[Validating Cores value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: ["6 Cores"]]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: ["6 Cores"]]]>
+    </line>
+    <line>
+      <![CDATA[Validating Hard Drive Size value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: ["2 TB"]]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: ["2 TB"]]]>
+    </line>
+    <line>
+      <![CDATA[Validating memory value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: ["4 GB"]]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: ["4 GB"]]]>
+    </line>
+    <line>
+      <![CDATA[Validating ReservePrice value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: 500.0]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: 500.0]]>
+    </line>
+    <line>
+      <![CDATA[Validating Screen Size value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: ["16\""]]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: ["16\""]]]>
+    </line>
+    <line>
+      <![CDATA[Validating StartPrice value]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: 500.0]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: 500.0]]>
+    </line>
+    <line>
+      <![CDATA[Validating Title]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: Almost new apple pc]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: Almost new apple pc]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-04-06T20:53:32Z" name="Default suite" finished-at="2022-04-06T20:54:51Z" duration-ms="78651">
+    <groups>
+    </groups>
+    <test started-at="2022-04-06T20:53:32Z" name="Default test" finished-at="2022-04-06T20:54:51Z" duration-ms="78651">
+      <class name="com.enhance.rtt.testcases.TC_001_TradeMeApi">
+        <test-method is-config="true" signature="Auth()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:53:32Z" name="Auth" finished-at="2022-04-06T23:54:51Z" duration-ms="78545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Auth -->
+        <test-method signature="ValidateBuyNowPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateBuyNowPrice" finished-at="2022-04-06T23:54:51Z" duration-ms="55" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating BuyNowPrice value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: 2000.0]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: 2000.0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateBuyNowPrice -->
+        <test-method signature="ValidateCores()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateCores" finished-at="2022-04-06T23:54:51Z" duration-ms="18" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Cores value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: ["6 Cores"]]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: ["6 Cores"]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateCores -->
+        <test-method signature="ValidateHardDriveSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateHardDriveSize" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Hard Drive Size value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: ["2 TB"]]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: ["2 TB"]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateHardDriveSize -->
+        <test-method signature="ValidateMemory()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateMemory" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating memory value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: ["4 GB"]]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: ["4 GB"]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateMemory -->
+        <test-method signature="ValidateReservePrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateReservePrice" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating ReservePrice value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: 500.0]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: 500.0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateReservePrice -->
+        <test-method signature="ValidateScreenSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateScreenSize" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Screen Size value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: ["16\""]]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: ["16\""]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateScreenSize -->
+        <test-method signature="ValidateStartPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateStartPrice" finished-at="2022-04-06T23:54:51Z" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating StartPrice value]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: 500.0]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: 500.0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateStartPrice -->
+        <test-method signature="ValidateTitle()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateTitle" finished-at="2022-04-06T23:54:51Z" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Title]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: Almost new apple pc]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: Almost new apple pc]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+      </class> <!-- com.enhance.rtt.testcases.TC_001_TradeMeApi -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

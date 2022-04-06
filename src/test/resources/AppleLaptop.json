@@ -1,0 +1,56 @@
+{
+    "Title": "Apple Laptop Unscratched",
+    "Duration": 7,
+    "Category": "0002-0356-0032-2273-",
+    "Description": [
+        "desc1",
+        "desc2"
+    ],
+    "PaymentMethods": [
+        4
+    ],    
+    "StartPrice": 500.0,
+    "ReservePrice": 500.0,
+    "BuyNowPrice": 2000.0,
+    "Pickup": 3,
+    "ShippingOptions": [
+        {
+            "Type": 1,
+            "Country": "ABC",
+            "Name": "ABC",
+            "FlatRate": 123.0,
+            "Description": "ABC",
+            "IsSellRestrictionsEffective": false,
+            "IsTaxEffective": false,
+            "IsApplied": false,
+            "TaxAmount": 123.0,
+            "WasPriceTaxAmount": 123.0
+        }
+    ],
+    "Attributes": [
+        {
+            "Name": "Memory",
+            "DisplayName": "Memory",
+            "Value": "8 GB",
+            "Type": 4
+        },
+        {
+            "Name": "Hard Drive Size",
+            "DisplayName": "Hard Drive Size",
+            "Value": "1 TB",
+            "Type": 4
+        },
+        {
+            "Name": "Screen Size",
+            "DisplayName": "Screen Size",
+            "Value": "16\"",
+            "Type": 4
+        },
+        {
+            "Name": "Cores",
+            "DisplayName": "Cores",
+            "Value": "6 Cores",
+            "Type": 4
+        }
+    ]
+}

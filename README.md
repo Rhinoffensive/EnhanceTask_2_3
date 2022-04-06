@@ -78,9 +78,10 @@ I created an OAuth 1.0 protocole using the API key in the property file. At firs
     /sandboxapii/src/main/java/sandboxapii/TradeMeApi.java
 
 ```java
-	service = new ServiceBuilder(prop.getProperty("oauth.consumerKey"))
-				.apiSecret(prop.getProperty("oauth.consumerSecret")).build(TradeMeApi.instance());
-		final OAuth1RequestToken requestToken = service.getRequestToken();
+service = new ServiceBuilder(prop.getProperty("oauth.consumerKey"))
+                .apiSecret(prop.getProperty("oauth.consumerSecret"))
+                .build(TradeMeApi.instance());
+final OAuth1RequestToken requestToken = service.getRequestToken();
 ```
 Note: service.getRequestToken() method uses the following endpoint with read and write rights: https://secure.tmsandbox.co.nz/Oauth/RequestToken?scope=MyTradeMeRead,MyTradeMeWrite
 
@@ -105,52 +106,52 @@ I created AppleLaptop.json file as a template using [Retrieve detailed informati
 I created a class that modifies the fields such as memory, screen size, hard drive size, etc.
 
 ```java
-	cj = new ComputerJson("src/test/resources/AppleLaptop.json");
-	String body = cj.setTitle("Almost new apple pc")
-    .setDuration(6)
-    .setAttribute("Memory", "4 GB")
-    .setAttribute("Hard Drive Size", "2 TB")
-    .getJsonString();
+cj = new ComputerJson("src/test/resources/AppleLaptop.json");
+String body = cj.setTitle("Almost new apple pc")
+                .setDuration(6)
+                .setAttribute("Memory", "4 GB")
+                .setAttribute("Hard Drive Size", "2 TB")
+                .getJsonString();
 
 ```
 I post this json string to the server. If it creates the listing successfully, its response body contains a Listing ID.
 
 ```java
-	OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.tmsandbox.co.nz/v1/Selling.json");
-	request.addHeader("Content-type", "application/json");
-	request.setPayload(body);
-	service.signRequest(accessToken, request);
-	Response response = service.execute(request);
-	assertTrue(response.isSuccessful());
+OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.tmsandbox.co.nz/v1/Selling.json");
+request.addHeader("Content-type", "application/json");
+request.setPayload(body);
+service.signRequest(accessToken, request);
 
-    JSONParser parser = new JSONParser();
-	JSONObject json = new JSONObject(response.getBody());
-	createdListingId = (long) json.get("ListingId");
+Response response = service.execute(request);
+assertTrue(response.isSuccessful());
+
+JSONParser parser = new JSONParser();
+JSONObject json = new JSONObject(response.getBody());
+createdListingId = (long) json.get("ListingId");
 ```
 
 I get the details of the particular listing using the following endpoint: [Retrieve the details of a single listing
 ](https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing)
 
 ```java
-	OAuthRequest get_request = new OAuthRequest(Verb.GET,
-				String.format("https://api.tmsandbox.co.nz/v1/Listings/%d.json", createdListingId));
-		request.addHeader("Content-type", "application/json");
-		service.signRequest(accessToken, get_request);
-		get_response = service.execute(get_request);
+OAuthRequest get_request = new OAuthRequest(Verb.GET,
+        String.format("https://api.tmsandbox.co.nz/v1/Listings/%d.json", createdListingId));
+
+request.addHeader("Content-type", "application/json");
+service.signRequest(accessToken, get_request);
+get_response = service.execute(get_request);
 ```
 
 Now we have published and requested the json objects to compare.
 ```java
-
-	@Test
-	public void ValidateTitle() throws InterruptedException, ExecutionException, IOException {
-		Reporter.log("Validating Title");
-		Object expected = JsonPath.read(cj.getJsonString(), "$.Title");
-		Object actual = JsonPath.read(get_response.getBody(), "$.Title");
-		Reporter.log("Expected value: " + expected);
-		Reporter.log("Actual value: " + actual);
-		assertEquals(expected, actual);
-
-	}
+@Test
+public void ValidateTitle() throws InterruptedException, ExecutionException, IOException {
+	Reporter.log("Validating Title");
+	Object expected = JsonPath.read(cj.getJsonString(), "$.Title");
+	Object actual = JsonPath.read(get_response.getBody(), "$.Title");
+	Reporter.log("Expected value: " + expected);
+	Reporter.log("Actual value: " + actual);
+	assertEquals(expected, actual);
+}
 ```
 

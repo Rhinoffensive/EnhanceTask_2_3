@@ -159,5 +159,5 @@ Simple, maillable report should be saved at:
     
     /sandboxapii/test-output/emailable-report.html
 
-It's look like this
+It looks like this
 ![picture alt](https://github.com/Rhinoffensive/EnhanceTask_2_3/blob/master/report.PNG?raw=true "report")

@@ -93,6 +93,19 @@ public class TC_001_TradeMeApi {
 	}
 	
 	@Test
+	public void ValidateCategory() throws InterruptedException, ExecutionException, IOException {
+		Reporter.log("Validating Category");
+		Object expected = "0002-0356-0032-2273-";
+		//Object expected = JsonPath.read(cj.getJsonString(), "$.Category");
+		Object actual = JsonPath.read(get_response.getBody(), "$.Category");
+		
+		Reporter.log("Expected value: " + expected);
+		Reporter.log("Actual value: " + actual);
+		assertEquals(expected, actual);
+		
+	}
+	
+	@Test
 	public void ValidateStartPrice() throws InterruptedException, ExecutionException, IOException {
 		Reporter.log("Validating StartPrice value");
 		Object expected = JsonPath.read(cj.getJsonString(), "$.StartPrice");

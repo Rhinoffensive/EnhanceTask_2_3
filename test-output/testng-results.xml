@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="8" passed="8" failed="0" skipped="0">
+<testng-results total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Validating BuyNowPrice value]]>
@@ -9,6 +9,15 @@
     </line>
     <line>
       <![CDATA[Actual value: 2000.0]]>
+    </line>
+    <line>
+      <![CDATA[Validating Category]]>
+    </line>
+    <line>
+      <![CDATA[Expected value: 0002-0356-0032-2273-]]>
+    </line>
+    <line>
+      <![CDATA[Actual value: 0002-0356-0032-2273-]]>
     </line>
     <line>
       <![CDATA[Validating Cores value]]>
@@ -74,16 +83,16 @@
       <![CDATA[Actual value: Almost new apple pc]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-06T20:53:32Z" name="Default suite" finished-at="2022-04-06T20:54:51Z" duration-ms="78651">
+  <suite started-at="2022-04-06T23:57:22Z" name="Default suite" finished-at="2022-04-06T23:57:41Z" duration-ms="18571">
     <groups>
     </groups>
-    <test started-at="2022-04-06T20:53:32Z" name="Default test" finished-at="2022-04-06T20:54:51Z" duration-ms="78651">
+    <test started-at="2022-04-06T23:57:22Z" name="Default test" finished-at="2022-04-06T23:57:41Z" duration-ms="18571">
       <class name="com.enhance.rtt.testcases.TC_001_TradeMeApi">
-        <test-method is-config="true" signature="Auth()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:53:32Z" name="Auth" finished-at="2022-04-06T23:54:51Z" duration-ms="78545" status="PASS">
+        <test-method is-config="true" signature="Auth()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:22Z" name="Auth" finished-at="2022-04-07T02:57:41Z" duration-ms="18427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Auth -->
-        <test-method signature="ValidateBuyNowPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateBuyNowPrice" finished-at="2022-04-06T23:54:51Z" duration-ms="55" status="PASS">
+        <test-method signature="ValidateBuyNowPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateBuyNowPrice" finished-at="2022-04-07T02:57:41Z" duration-ms="77" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating BuyNowPrice value]]>
@@ -96,7 +105,20 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateBuyNowPrice -->
-        <test-method signature="ValidateCores()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateCores" finished-at="2022-04-06T23:54:51Z" duration-ms="18" status="PASS">
+        <test-method signature="ValidateCategory()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateCategory" finished-at="2022-04-07T02:57:41Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Category]]>
+            </line>
+            <line>
+              <![CDATA[Expected value: 0002-0356-0032-2273-]]>
+            </line>
+            <line>
+              <![CDATA[Actual value: 0002-0356-0032-2273-]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateCategory -->
+        <test-method signature="ValidateCores()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateCores" finished-at="2022-04-07T02:57:41Z" duration-ms="18" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating Cores value]]>
@@ -109,7 +131,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateCores -->
-        <test-method signature="ValidateHardDriveSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateHardDriveSize" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+        <test-method signature="ValidateHardDriveSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateHardDriveSize" finished-at="2022-04-07T02:57:41Z" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating Hard Drive Size value]]>
@@ -122,7 +144,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateHardDriveSize -->
-        <test-method signature="ValidateMemory()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateMemory" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+        <test-method signature="ValidateMemory()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateMemory" finished-at="2022-04-07T02:57:41Z" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating memory value]]>
@@ -135,7 +157,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateMemory -->
-        <test-method signature="ValidateReservePrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateReservePrice" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+        <test-method signature="ValidateReservePrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateReservePrice" finished-at="2022-04-07T02:57:41Z" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating ReservePrice value]]>
@@ -148,7 +170,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateReservePrice -->
-        <test-method signature="ValidateScreenSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateScreenSize" finished-at="2022-04-06T23:54:51Z" duration-ms="2" status="PASS">
+        <test-method signature="ValidateScreenSize()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateScreenSize" finished-at="2022-04-07T02:57:41Z" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating Screen Size value]]>
@@ -161,7 +183,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateScreenSize -->
-        <test-method signature="ValidateStartPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateStartPrice" finished-at="2022-04-06T23:54:51Z" duration-ms="3" status="PASS">
+        <test-method signature="ValidateStartPrice()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateStartPrice" finished-at="2022-04-07T02:57:41Z" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating StartPrice value]]>
@@ -174,7 +196,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ValidateStartPrice -->
-        <test-method signature="ValidateTitle()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@4d5650ae]" started-at="2022-04-06T23:54:51Z" name="ValidateTitle" finished-at="2022-04-06T23:54:51Z" duration-ms="3" status="PASS">
+        <test-method signature="ValidateTitle()[pri:0, instance:com.enhance.rtt.testcases.TC_001_TradeMeApi@a38c7fe]" started-at="2022-04-07T02:57:41Z" name="ValidateTitle" finished-at="2022-04-07T02:57:41Z" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validating Title]]>
